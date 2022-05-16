@@ -17,3 +17,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     return render_template('homepage.html', datetime=yymmdd)
+
+@app.route('/about')
+def about():
+    return render_template('about.html', datetime=yymmdd)
