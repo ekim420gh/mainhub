@@ -2,7 +2,29 @@
 
 {% block content %}
   <h1>Hello my name is Elbert and...</h1>
+  <p></p>
+  <p></p>
   <p class="fs-5 col-md-12">I like writing code. When I was 25 I read Steve Job's <a href="https://www.amazon.com/Steve-Jobs-Walter-Isaacson/dp/1451648537">biography</a> and wanted to learn more.</p>
   <p class="fs-5 col-md-12">I like making music. You can listen to me on <a href="https://soundcloud.com/lkstandsfor">SoundCloud</a> or <a href="https://open.spotify.com/artist/7oEzBar8TlQzdDaejt37zw">Spotify</a></p>
   <p class="fs-5 col-md-12">I like recording videos. Some topics include: <a href="https://www.youtube.com/watch?v=cU8YH2rhN6A&t=113s">Spotify</a>, <a href="https://www.youtube.com/watch?v=6eCv4_VWbNA&t=76s">Cardano</a>, <a href="https://www.youtube.com/watch?v=vbibdIZtiQ0">LeetCode</a>, and <a href="https://www.youtube.com/watch?v=h8eEqt25f8c&t=29s">J. Cole</a></p>
+{% endblock %}
+
+{% block navbar %}
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="{{ url_for('hello') }}">ekim420</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="{{ url_for('hello') }}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('about') }}">About <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <hr class="col-3 col-md-2 mb-5">
 {% endblock %}
