@@ -1,5 +1,35 @@
 {% extends "homepage.html" %}
 
+{% block navbar %}
+<nav class="navbar navbar-expand bg-light rounded" aria-label="Second navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{{ url_for('hello') }}">ekim420</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample02">
+        <ul class="navbar-nav me-auto">
+            
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{{ url_for('hello') }}">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('about') }}">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('why_I_began_coding') }}">Essay #1</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <hr class="col-3 col-md-2 mb-5">
+{% endblock %}
+
 {% block content %}
   <h1>Why I began coding...</h1>
   <p></p>
