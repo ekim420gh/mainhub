@@ -93,7 +93,7 @@
 
   </header> -->
 {% block navbar %}
-<nav class="navbar navbar-expand bg-light rounded" aria-label="Second navbar example">
+<nav class="navbar navbar-expand navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="{{ url_for('hello') }}">ekim420</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
@@ -121,16 +121,8 @@
   </nav>
 
   <p></p>
-  <h2>hey,</h2>
   <form class="custom0 custom1" action="/data" method = "POST">
       <button value="submit">Click me for a quote</button>
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
-      </svg>
-      <!-- <p>Answer 1 <input type = "text" name = "Answer1_name" /></p>
-      <p>Answer 2 <input type = "text" name = "Answer2_name" /></p>
-      <p>Answer 3 <input type = "text" name = "Answer3_name" /></p>
-      <p><input type = "submit" value = "submit" /></p> -->
   </form>
   <hr class="col-3 col-md-2 mb-5">
   {% endblock %}

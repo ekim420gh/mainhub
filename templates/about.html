@@ -1,7 +1,7 @@
 {% extends "homepage.html" %}
 
 {% block navbar %}
-<nav class="navbar navbar-expand bg-light rounded" aria-label="Second navbar example">
+<nav class="navbar navbar-expand navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="{{ url_for('hello') }}">ekim420</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,14 +31,7 @@
 {% endblock %}
 
 {% block content %}
-
-  <h1>This website was built with:</h1>
-  <img class="tools" src="{{ url_for('static', filename='img/flask_python.png')}}">
-  <img class="tools" src="{{ url_for('static', filename='img/google-cloud.png')}}">
-  <img class="tools" src="{{ url_for('static', filename='img/html-css.png')}}">
-  <p></p>
-  
-  <h2>My name is <a href="https://www.linkedin.com/in/elbertk/">Elbert</a> and...</h2>
+<h1>My name is <a href="https://www.linkedin.com/in/elbertk/">Elbert</a> and...</h1>
   <p></p>
   <p></p>
   <p class="fs-5 col-md-12">I like writing code. When I was 25 I read Steve Job's <a href="https://www.amazon.com/Steve-Jobs-Walter-Isaacson/dp/1451648537">biography</a> and wanted to learn more</p>
