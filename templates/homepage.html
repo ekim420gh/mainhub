@@ -102,18 +102,32 @@
 
       <div class="collapse navbar-collapse" id="navbarsExample02">
         <ul class="navbar-nav me-auto">
+            
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="{{ url_for('hello') }}">Home</a>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('about') }}">About</a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('why_I_began_coding') }}">Essay #1</a>
+          </li>
+
         </ul>
       </div>
     </div>
   </nav>
   <p></p>
-  <p>"Truth is the only safe ground to stand upon" - Elizabeth Stanton</p>
+  <h2>hey,</h2>
+  <form class="custom0 custom1" action="/data" method = "POST">
+      <button value="submit">Click me for a quote</button>
+      <!-- <p>Answer 1 <input type = "text" name = "Answer1_name" /></p>
+      <p>Answer 2 <input type = "text" name = "Answer2_name" /></p>
+      <p>Answer 3 <input type = "text" name = "Answer3_name" /></p>
+      <p><input type = "submit" value = "submit" /></p> -->
+  </form>
   <hr class="col-3 col-md-2 mb-5">
 {% endblock %}
 
@@ -124,7 +138,7 @@
     <p class="fs-5 col-md-8">Is this art?</p>
     <img class="img-fluid" src="{{ url_for('static', filename='img/2955.png')}}">
     <p></p>
-    <p class="fs-5 col-md-8"><a href="https://opensea.io/collection/azuki">Azuki #2955</a><i>(would you pay 40k?)</i></p>
+    <p class="fs-5 col-md-8"><a href="https://opensea.io/collection/azuki">Azuki #2955</a><i>(question: would you pay 40k USD?)</i></p>
 {% endblock %}
     
     <hr class="col-3 col-md-2 mb-5">
