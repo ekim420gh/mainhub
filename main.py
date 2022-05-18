@@ -39,7 +39,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return render_template('homepage.html', datetime=yymmdd)
+    return render_template('homepage.html', datetime=yymmdd, quote=quote_string)
 
 @app.route('/about')
 def about():
@@ -53,6 +53,6 @@ def essays():
 def why_I_began_coding():
     return render_template('why_I_began_coding.html')
 
-@app.route("/quote", methods=['POST'])
-def quote():
-    return render_template("quote.html", quote=quote_string)
+# @app.route("/quote", methods=['POST'])
+# def quote():
+#     return render_template("quote.html", quote=quote_string)
