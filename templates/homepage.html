@@ -121,10 +121,10 @@
   <main>
     <h1>{{ datetime }} EST</h1>
     <!-- <p class="fs-5 col-md-8">{{ datetime }} EST</p> -->
-    <p class="fs-5 col-md-8">Here you can view the things I'm working on / thinking about. More about me <a href="{{ url_for('about') }}">here</a>. Cheers.</p>
+    <p class="fs-5 col-md-8">Is this art?</p>
     <img class="img-fluid" src="{{ url_for('static', filename='img/2955.png')}}">
     <p></p>
-    <p class="fs-5 col-md-8"><a href="https://opensea.io/collection/azuki">Azuki #2955</a><i>(accumulating eth...)</i></p>
+    <p class="fs-5 col-md-8"><a href="https://opensea.io/collection/azuki">Azuki #2955</a><i>(would you pay 40k?)</i></p>
 {% endblock %}
     
     <hr class="col-3 col-md-2 mb-5">
@@ -143,7 +143,7 @@
         <h2>Essays</h2>
         <p>A glimpse into my mind</p>
         <ul class="icon-list ps-0">
-          <li class="d-flex align-items-start mb-1"><a href="/">Why I began coding</a></li>
+          <li class="d-flex align-items-start mb-1"><a href="{{ url_for('why_I_began_coding') }}">Why I began coding</a></li>
         </ul>
       </div>
     </div>

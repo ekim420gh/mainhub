@@ -21,3 +21,7 @@ def hello():
 @app.route('/about')
 def about():
     return render_template('about.html', datetime=yymmdd)
+
+@app.route('/essays/why_I_began_coding')
+def why_I_began_coding():
+    return render_template('why_I_began_coding.html')
