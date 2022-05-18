@@ -45,6 +45,10 @@ def hello():
 def about():
     return render_template('about.html', datetime=yymmdd)
 
+@app.route("/projects")
+def projects():
+    return render_template("projects.html")
+
 @app.route("/essays")
 def essays():
     return render_template("essays.html")
