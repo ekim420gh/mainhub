@@ -45,10 +45,14 @@ def hello():
 def about():
     return render_template('about.html', datetime=yymmdd)
 
+@app.route("/essays")
+def essays():
+    return render_template("essays.html")
+
 @app.route('/essays/why_I_began_coding')
 def why_I_began_coding():
     return render_template('why_I_began_coding.html')
 
-@app.route("/data", methods=['POST', 'GET'])
-def data():
+@app.route("/quote", methods=['POST'])
+def quote():
     return render_template("quote.html", quote=quote_string)
